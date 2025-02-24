@@ -27,7 +27,7 @@ const CustomExperienceProps: React.FC<ExperienceItemProps> = ({
           <div className="flex pl-4 space-x-2">
             {technologies.map((tech, index) => (
               <ul
-                key={index}
+                key={index} 
                 className="px-3 py-auto text-[#E0168E] border-2 border-[#6A3973] rounded-full transition duration-300 ease-in-out hover:scale-105 hover:border-[#58E7CE] uppercase"
               >
                 {tech}
