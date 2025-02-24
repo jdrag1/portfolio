@@ -1,69 +1,33 @@
+import React from "react";
+import CustomExperienceProps from "./CustomExperienceProps";
+
 const Experience = () => {
   return (
     <div className="border-b border-neutral-900 pb-4">
-    <h2 className="my-16 text-center font-bold text-[#E0168E] text-5xl uppercase">Experience</h2>
+      <h2 className="my-16 text-center font-bold text-[#E0168E] text-5xl uppercase">
+        Experience
+      </h2>
 
-    {/* First Experience Block */}
-    <div className="mb-8 flex flex-wrap py-4 lg:justify-center">
-        <div className="w-full lg:w-1/4">
-            <p className="mb-2 text-2xl bg-[linear-gradient(to_right,#58E7CE,#6A3973,#58E7CE,#2E3D61,#8FB1BE,#6A3973,#58E7CE)] bg-clip-text text-transparent">
-                2025-Present
-            </p>
-        </div>
-        <div className="w-full pl-6 max-w-xl lg:w-3/4">
-            <div className="text-3xl text-[#E0168E]">Web Developer Intern - Monad Solutions Inc.</div>
-            <p className="text-lg font-thin text-[#E0168E]">
-                Gaining real-world experience in web development by studying front-end technologies, including React, Vite, and Tailwind CSS.
-                Designed and developed a portfolio website to showcase my skills, projects, and hands-on experience with modern web development tools.
-                Soon, I will collaborate with my supervisors on a company project, applying my knowledge in a professional setting.
-            </p>
-            <div className="flex pl-4 space-x-2">
-                <ul className="px-3 py-auto text-[#E0168E] border-2 border-[#6A3973] rounded-full transition duration-300 ease-in-out hover:scale-105 hover:border-[#58E7CE] uppercase">
-                    React
-                </ul>
-                <ul className="px-3 py-auto text-[#E0168E] border-2 border-[#6A3973] rounded-full transition duration-300 ease-in-out hover:scale-105 hover:border-[#58E7CE] uppercase">
-                    Typescript
-                </ul>
-                <ul className="px-3 py-auto text-[#E0168E] border-2 border-[#6A3973] rounded-full transition duration-300 ease-in-out hover:scale-105 hover:border-[#58E7CE] uppercase">
-                    Tailwind CSS
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div className="mb-8 flex flex-wrap py-4 lg:justify-center">
-        <div className="w-full lg:w-1/4">
-            <p className="mb-2 text-2xl bg-[linear-gradient(to_right,#58E7CE,#6A3973,#58E7CE,#2E3D61,#8FB1BE,#6A3973,#58E7CE)] bg-clip-text text-transparent">
-                MORE EXPERIENCE SOON
-            </p>
-        </div>
-        <div className="w-full pl-6 max-w-xl lg:w-3/4">
-            <div className="text-3xl text-[#E0168E]">?????? - ????????</div>
-            <h1 className="text-xl font-thin text-[#E0168E]">
-                ?????????????????????????????????????????????????????????
-                ??????????????????????????????????????????????????????????
-                ??????????????????????????????????????????????????????????
-            </h1>
-        </div>
-    </div>
-    <div className="mb-8 flex flex-wrap py-3 lg:justify-center">
-        <div className="w-full lg:w-1/4">
-            <p className="mb-2 text-2xl bg-[linear-gradient(to_right,#58E7CE,#6A3973,#58E7CE,#2E3D61,#8FB1BE,#6A3973,#58E7CE)] bg-clip-text text-transparent">
-                MORE EXPERIENCE SOON
-            </p>
-        </div>
-        <div className="w-full pl-6 max-w-xl lg:w-3/4">
-            <div className="text-3xl text-[#E0168E]">?????? - ????????</div>
-            <h1 className="text-xl font-thin text-[#E0168E]">
-                ?????????????????????????????????????????????????????????
-                ??????????????????????????????????????????????????????????
-                ??????????????????????????????????????????????????????????
-                ??????????????????????????????????????????????????????????
-            </h1>
-        </div>
-    </div>
-</div>
+      <CustomExperienceProps
+        period="2025-Present"
+        title="Web Developer Intern - Monad Solutions Inc"
+        description="Gaining real-world experience in web development by studying front-end technologies, including React, Vite, and Tailwind CSS. Designed and developed a portfolio website to showcase my skills, projects, and hands-on experience with modern web development tools. Soon, I will collaborate with my supervisors on a company project, applying my knowledge in a professional setting."
+        technologies={["React", "Typescript", "Tailwind CSS"]}
+      />
 
-  )
-}
+      <CustomExperienceProps
+        period="MORE EXPERIENCE SOON"
+        title="?????? - ????????"
+        description=""
+      />
 
-export default Experience
+      <CustomExperienceProps
+        period="MORE EXPERIENCE SOON"
+        title="?????? - ????????"
+        description=""
+      />
+    </div>
+  );
+};
+
+export default Experience;

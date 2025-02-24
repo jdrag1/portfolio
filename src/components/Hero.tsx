@@ -1,5 +1,7 @@
-import MyPicture from "../assets/jerald.png"
+import jeraldImage from '../assets/jerald.png'
 import CustomButton from "./CustomButton"
+import React from "react";
+
 
 const Hero = () => {
   return (
@@ -36,7 +38,7 @@ const Hero = () => {
         </div>
 
         
-        <img src={MyPicture} alt="My Picture" className="relative w-[500px] h-auto object-cover z-10" />
+        <img src={jeraldImage} alt="My Picture" className="relative w-[500px] h-auto object-cover z-10" />
       </div>
 
     </div>
