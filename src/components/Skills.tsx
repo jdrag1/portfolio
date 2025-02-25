@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { RiReactjsLine, RiTailwindCssLine, RiHtml5Line } from "react-icons/ri";
 import { FaCss3Alt, FaPhp, FaMicrosoft } from "react-icons/fa";
 import { SiTypescript, SiMysql } from "react-icons/si";
+import React from "react";
 
 const iconVariants = (duration: number) => ({
   initial: { y: 0 },
